@@ -1,0 +1,189 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+		/* background:url('http://microtractor.ru/bkg-white.png'); */
+}
+
+body {
+    padding-top: 15px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 50%;
+}
+
+.topnav {height:40px; min-width: 995px; background-color: #62BBC4; text-align:center;}
+.topnav1 {height: 40px; width: 995px; margin-left: auto; margin-right: auto; padding-top:5px;}
+.topnav  a {color:#fff; text-decoration:underline; font:22px "Helvetica Neue",Helvetica,Arial,sans-serif; padding-right: 25px;}
+.topnav  a:hover {text-decoration:none;}
+
+.slogan-elf {height:26px; min-width: 995px; background-color: #000; text-align:left; color:#fff; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;}
+.slogan-elf-1 {height: 35px; width: 995px; margin-left: auto; margin-right: auto; padding-top:7px;}
+
+.phone {	color:#606060; font:27px "Helvetica Neue",Helvetica,Arial,sans-serif; font-weight:bold}
+.phone span {color:#FF0000;}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+
+.bordered table {
+    *border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    -moz-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc;         
+}
+
+.bordered tr:hover {
+    background: #a1e8ef;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;     
+}
+
+
+.bordered td {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 3px;
+    text-align: left;
+}
+
+.bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 3px;
+    text-align: center;
+}
+
+.bordered th {
+    background-color: #62BBC4;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#62BBC4), to(#62BBC4));
+    background-image: -webkit-linear-gradient(top, #62BBC4, #62BBC4);
+    background-image:    -moz-linear-gradient(top, #62BBC4, #62BBC4);
+    background-image:     -ms-linear-gradient(top, #62BBC4, #62BBC4);
+    background-image:      -o-linear-gradient(top, #62BBC4, #62BBC4);
+    background-image:         linear-gradient(top, #62BBC48, #62BBC4);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+}
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}

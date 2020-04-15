@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Типаж тракторной техники: основные принципы построения &mdash; ELF • малогабаритные машины: малый гусеничный трактор (мини трактор)</title>
+	
+		<base href="" />
+
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <meta name="title" content="Типаж тракторной техники: основные принципы построения" />
+    <meta name="robots" content="index,follow">
+	
+	<link rel="shortcut icon" href="http://microtractor.ru/favicon.ico"></link>
+	<link rel="icon" href="http://microtractor.ru/favicon.ico"></link>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<link href='http://fonts.googleapis.com/css?family=Cuprum:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+
+<body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter31696016 = new Ya.Metrika({
+                    id:31696016,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/31696016" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+				<center><a href="../index.html"><img src="../micro_bkg_33.png" wodth="1000" height="130" alt="" border="0"></a></center>
+            </div>		
+        </div>
+		
+<div class="topnav">
+<div class="topnav1">
+                    <a href="../index.html">Продукция</a>
+                    <a href="../prices.html">Цены</a>
+					<a href="../company.html">О компании</a>
+					<a href="../foto.html">Галерея</a>
+					<a href="../info.html">Партнёры</a>
+					<a href="../contacts.html">Контакты</a>
+</div>
+</div>
+
+        <!-- /.row -->
+
+        <!-- Image Header -->
+   <!--     <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" src="http://placehold.it/1200x300" alt="">
+            </div>
+        </div> -->
+        <!-- /.row --> 
+	
+		        <!-- Service Tabs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Типаж тракторной техники: основные принципы построения</h2>
+				
+				<p>Трактор &ndash; это самоходная машина (обычно колесная или гусеничная), предназначенная для приведения в действие прицепного или навесного оборудования и рабочих органов с целью выполнения разнообразных технологических операций. Совокупность трактора с прицепным, навесным, полунавесным и стационарным оборудованием называется машинно-тракторным агрегатом (МТА).</p>
+<p>Тракторы используются во всех отраслях народного хозяйства (сельское, лесное, коммунальное хозяйства, промышленное и гражданское строительство и т.д.) с целью механизации тяжелого физического труда и повышения его производительности. Для удовлетворения широкого спектра задач народного хозяйства необходим целый ряд моделей тракторной техники &ndash; от мала до велика.</p>
+<p><img src="../assets/images/tractor_0001.png" width="345" height="70" /></p>
+<p><strong>В основе формирования такого (дискретного) ряда тракторной техники лежит рационально обоснованная система, позволяющая покрыть весь (непрерывный) спектр задач с максимальной эффективностью. Основные принципы этой системы заключаются в следующем:</strong></p>
+<p>1. Минимальное число моделей тракторов, обоснованное по экономическим и техническим соображениям;</p>
+<p>2. Полное покрытие нужд народного хозяйства по номинальным тяговым усилиям и скоростям тракторов;</p>
+<p>3. Обеспечение максимальной производительности МТА и других критериев эффективности.</p>
+<p>С учетом всех этих требований принят основной классификационный параметр (номинальное тяговое усилие трактора) по которому в соответствии с ГОСТ 27021-86 выполняется градация всей тракторной техники на тяговые классы. Как показала практика, именно этот параметр считается наиболее стабильным (не существенно зависит от типа движителя и свойств грунта) и определяет возможности агрегатирования трактора с машинами-орудиями.</p>
+<p>Под номинальным тяговым усилием сельскохозяйственных и лесохозяйственных тракторов принимается усилие, которое они развивают на стерне средней плотности и при нормальной влажности почвы (от 8 до 18%) в зоне максимального значения тягового КПД при эксплуатационной массе, предусмотренной технической характеристикой (для колесных тракторов с балластным грузом) при предельных значениях буксования.</p>
+<p>Номинальным тяговым усилием промышленного трактора считается наибольшее тяговое усилие, которое он может реализовать на плотном сухом грунте. Так как эта величина взаимосвязана с конструкционной массой трактора, то тяговый класс промышленных тракторов иногда определяют по ее диапазону (см. табл. 2).</p>
+<p>Сельскохозяйственные и лесохозяйственные тракторы делят на десять тяговых классов, а промышленные тракторы - на восемь (табл. 1 и 2).</p>
+<p style="text-align: center;"><strong>Таблица 1. Тяговые классы сельскохозяйственных и лесохозяйственных тракторов</strong></p>
+<table class="bordered" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr><th><strong>Тяговый класс</strong></th><th>Номинальное тяговое усилие, кН</th><th>Тяговый класс</th><th>Номинальное тяговое усилие, кН</th></tr>
+<tr>
+<td>0.2</td>
+<td>От 1,8 до 5,4</td>
+<td>3</td>
+<td>Св. 27 до 36</td>
+</tr>
+<tr>
+<td>0.6</td>
+<td>Св. 5,4 до 8,1</td>
+<td>4</td>
+<td>Св. 36 до 45</td>
+</tr>
+<tr>
+<td>0.9</td>
+<td>Св. 8,1 до 12,6</td>
+<td>5</td>
+<td>Св. 45 до 54</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>Св. 12,6 до 18</td>
+<td>6</td>
+<td>Св. 54 до 72</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Св. 18 до 27</td>
+<td>8</td>
+<td>Св. 72 до 108</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p style="text-align: center;"><strong>Таблица 2. Тяговые классы промышленных тракторов</strong></p>
+<table class="bordered" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr><th><strong>Тяговый класс</strong></th><th>Номинальное тяговое усилие, кН</th><th>Тяговый класс</th><th>Номинальное тяговое усилие, кН</th></tr>
+<tr>
+<td>2</td>
+<td>От 4 до 6</td>
+<td>25</td>
+<td>Св. 25 до 35</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Св. 6 до 10</td>
+<td>35</td>
+<td>Св. 35 до 50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Св. 10 до 15</td>
+<td>50</td>
+<td>Св. 50 до 70</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Св. 15 до 25</td>
+<td>70</td>
+<td>Св. 70 до 90</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>Приведенная выше рационально обоснованная (с точки зрения техники, технологии производства, экономики и эксплуатации) градация тракторов по тяговому классу называется типажом тракторов.</p>
+<p>Тяговый класс &ndash; это совокупность моделей тракторов, имеющих тяговое усилие в заданных пределах.</p>
+<p>Модель трактора &ndash; конкретное конструктивное исполнение трактора. В рамках единого производства выделяют базовую модель, на основании которой создают модификации.</p>
+<p>Модификация &ndash; это модель, относящаяся к тому же классу, что и базовая, имеющая с последней широкую степень унификации. Модификации создаются для более эффективного выполнения специфических операций либо для работы в специфических условиях. Модификация может иметь, в отличие от базовой модели измененную компоновку, дополнительные механизмы. Что позволяет быстро и с наименьшими затратами на подготовку производства создавать необходимый трактор.</p>
+<p>Типы и основные параметры малогабаритных тракторов устанавливаются в ГОСТ 28523-90 &laquo;Мобильные средства малой механизации сельскохозяйственных работ. ТРАКТОРЫ МАЛОГАБАРИТНЫЕ. Типы и основные параметры&raquo;</p>
+<p style="text-align: center;"><strong>Таблица 3. Типы и основные параметры МГТ по ГОСТ 28523-90</strong></p>
+<table class="bordered" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr><th rowspan="2"><strong><span>Типы МГТ</span><br /></strong></th><th rowspan="2">Конструкционная масса, кг +15%</th><th rowspan="2">
+<p align="center">Номинальная</p>
+мощность двигателя, кВт&nbsp;</th><th colspan="2">Максимальная скорость, км&middot;ч&nbsp;</th><th rowspan="2">
+<p align="center">Ширина</p>
+колеи, мм, не более&nbsp;</th><th rowspan="2">
+<p align="center">Агротехнический просвет, мм, не менее&nbsp;</p>
+</th></tr>
+<tr>
+<td><strong>рабочая</strong></td>
+<td><strong>транспортн.&nbsp;</strong></td>
+</tr>
+<tr>
+<td colspan="7" class="justifyright">МГТ одноосные (мотоблоки)</td>
+</tr>
+<tr>
+<td>
+<p>Легкий</p>
+</td>
+<td>До 70&nbsp;</td>
+<td>До 3</td>
+<td>6</td>
+<td>15*</td>
+<td>700</td>
+<td>130</td>
+</tr>
+<tr>
+<td>
+<p>Средний</p>
+</td>
+<td>До 100</td>
+<td>До 5&nbsp;</td>
+<td></td>
+<td></td>
+<td></td>
+<td>150</td>
+</tr>
+<tr>
+<td>
+<p>Тяжелый</p>
+</td>
+<td>Св. 100&nbsp;</td>
+<td>Св. 5&nbsp;</td>
+<td></td>
+<td></td>
+<td></td>
+<td>300</td>
+</tr>
+<tr>
+<td colspan="7">
+<p class="justifyright">МГТ двухосные</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Легкий</p>
+</td>
+<td>До 500</td>
+<td>До 10&nbsp;</td>
+<td>6</td>
+<td>15</td>
+<td>800</td>
+<td>300</td>
+</tr>
+<tr>
+<td>
+<p>Средний</p>
+</td>
+<td><span>До 650</span></td>
+<td>До 14&nbsp;</td>
+<td>6</td>
+<td>25</td>
+<td>800</td>
+<td>300</td>
+</tr>
+<tr>
+<td>
+<p>Тяжелый</p>
+</td>
+<td>Св. 650&nbsp;</td>
+<td>Св. 14 до 16&nbsp;</td>
+<td>6</td>
+<td>25</td>
+<td>1200</td>
+<td>300</td>
+</tr>
+<tr></tr>
+</tbody>
+</table>
+<p></p>
+<p>Раньше типаж выполнял плановые функции, обязательные для заводов-изготовителей. В настоящее время в условиях рыночной экономики типаж имеет рекомендательный характер. Перспективные разработки тракторной техники по-прежнему отвечают требованиям высокого технического уровня, конкурентоспособности, повышению производительности МТА, улучшению условий труда тракториста и совершенствованию экологических качеств.</p>
+						
+            </div>
+            
+        </div>
+
+
+		<!-- Service List -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Материалы для скачивания</h2>
+            </div>
+            <div class="col-md-4">
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Каталог навесного оборудования</h4>
+						<p><a href="../pdf/elf-navesnoe.pdf" target="_blank">Скачать каталог >></a></p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-download fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Прайс-лист</h4>
+                        <p><a href="../prices.html">Открыть прайс-лист >></a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Дополнительные опции</h4>
+                        <p>Скачать каталог >></p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Каталог запчастей</h4>
+                        <p><a href="zapchast.html">Открыть каталог >></a></p>
+                    </div>
+                </div>				
+				
+				
+            </div>
+            <div class="col-md-4">
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Примеры комплектаций</h4>
+						<p><a href="../options.html">Открыть примеры комплектаций >></a></p>
+                    </div>
+                </div>
+				
+                <div class="media">
+                    <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+                        </span> 
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Доп. предложения</h4>
+                        <p><a href="dop-pred.html">Открыть раздел >></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+		
+        <!-- Service Panels -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Версии и комплектации тракторов <i>ELF</i></h2>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+						<a href="../indx/gusenichnoe-traktornoe-shassi-a.html"><img src="../assets/images/2a-200.jpg" width="200" height="200" border="0"></a>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Гусеничное тракторное шасси «A»</h4>
+                <!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                        <a href="../indx/gusenichnoe-traktornoe-shassi-a.html" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+							<a href="../indx/gusenichnoe-vezdehodnoe-shassi-b.html"><img src="../assets/images/2b-200.jpg" width="200" height="200" border="0"></a>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Гусеничное вездеходное шасси «B»</h4>
+                        <a href="../indx/gusenichnoe-vezdehodnoe-shassi-b.html" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+							<a href="../indx/gusenichnoe-transportnoe-shassi-c.html"><img src="../assets/images/c1-200.jpg" width="200" height="200" border="0"></a>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Гусеничное транспортное шасси «C»</h4>
+                        <a href="../indx/gusenichnoe-transportnoe-shassi-c.html" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+							<a href="../indx/kolesnoe-mnogocelevoe-shassi-d.html"><img src="../assets/images/D2-200.jpg" width="200" height="200" border="0"></a>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Колесное многоцелевое шасси «D»</h4>
+                        <a href="../indx/kolesnoe-mnogocelevoe-shassi-d.html" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+			
+								<center>
+				<h4>Двухзвенные гусеничные шасси «АхА», «ВхВ», «CxC»</h4>
+				<a href="../indx/dvuhzvennoe-gusenichnoe-shassi.html"><img src="../assets/images/dd2.jpg" border="0"></a><br /><br />
+				<a href="../indx/dvuhzvennoe-gusenichnoe-shassi.html" class="btn btn-primary">Подробнее</a>
+								</center>
+			
+        </div>
+		
+		
+
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>2015 &copy; <b><i>ELF</i></b> &mdash; производство малогабаритных транспортно-технологических машин и комплексов</p>
+					<p><b>Телефон:</b> +7 (952) 475-55-55 <b>e-mail:</b> info@microtractor.ru</p>
+					<br />
+					<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t57.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+
+
+<!-- begin of Top100 code -->
+
+<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?3121741"></script>
+<noscript>
+<a href="http://top100.rambler.ru/navi/3121741/">
+<img src="http://counter.rambler.ru/top100.cnt?3121741" alt="Rambler's Top100" border="0" />
+</a>
+
+</noscript>
+<!-- end of Top100 code -->
+
+
+<!-- Rating@Mail.ru counter -->
+<script type="text/javascript">
+var _tmr = _tmr || [];
+_tmr.push({id: "2673840", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "topmailru-code");
+</script><noscript><div style="position:absolute;left:-10000px;">
+<img src="http://top-fwz1.mail.ru/counter?id=2673840;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
+</div></noscript>
+<!-- //Rating@Mail.ru counter -->
+
+<!-- Rating@Mail.ru logo -->
+<a href="http://top.mail.ru/jump?from=2673840">
+<img src="http://top-fwz1.mail.ru/counter?id=2673840;t=410;l=1" 
+style="border:0;" height="31" width="88" alt="Рейтинг@Mail.ru" /></a>
+<!-- //Rating@Mail.ru logo -->
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="../js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
